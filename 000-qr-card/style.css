@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*------------------------ CSS RESET---------------------- */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    /* font-size: 14px; */
+}
+
+body{
+    font-size: 1.6rem;
+}
+/* ----------------------------------------------------------- */
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    font-family: Outfit;
+}
+.card{
+    width: 80%;
+    max-width: 280px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 50px gray;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 1em;
+}
+.card:hover{
+    transform: translate(-50%, -50%) scale(1.05);
+    transition: transform 0.2s;
+    cursor:pointer;
+}
+.card img{
+    width: 100%;
+}
+.card, .card img{
+    border-radius: 4%;
+}
+.heading, .para{
+    margin: .9em 0;
+    padding: 0 0.5em;
+}
+.card .heading{
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.card .para{
+    color: hsl(216, 15%, 48%);
+    font-size: 1.4rem;
+}
