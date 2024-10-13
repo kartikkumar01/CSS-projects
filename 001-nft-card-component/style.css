@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*------------------------ CSS RESET---------------------- */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+/* ----------------------------------------------------------- */
+body{
+    font-family: outfit, sans-serif;
+    background-color: hsl(216, 55%, 11%);
+    color: white;
+}
+.attribution a{
+    color: #3783bd;
+}
+.card{
+    background-color: hsl(213, 51%, 17%);
+    width: 90%;
+    max-width: 310px;
+    padding: 1.4em;
+    border-radius: 14px;
+    box-shadow: 1px 1px 30px 0px hsl(0deg 0% 7.09% / 74%);
+
+    /* to center the card of the viewport */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* to center the card of the viewport */
+}
+.card:hover{
+    transform: translate(-50%, -50%) scale(1.02);
+    transition: transform 0.2s;
+}
+.card-top figure{
+    cursor: pointer;
+}
+.card-top img{
+    display: block;
+    width: 100%;
+    border-radius: 4%;
+}
+.card-bottom{
+    font-size: 1.8rem; /*18px as said in readme*/
+}
+.card-bottom > *{
+    margin: 1em 0;
+}
+.card-top figure{
+    position: relative;
+} 
+.card-bottom .card-heading{
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+.card-bottom .card-description{
+    color: hsl(215, 51%, 70%);
+}
+.card-bottom .floating-elements .left svg{
+    vertical-align: text-bottom;
+    margin-right: .2em;
+}
+.card-bottom .floating-elements .right svg{
+    vertical-align: sub;
+    margin-right: .2em;
+}
+.card-bottom .floating-elements p{
+    display: inline-block;
+}
+.card-bottom .floating-elements .left{
+    float: left;
+    color: hsl(178, 100%, 50%);
+}
+.card-bottom .floating-elements .right{
+    float: right;
+    color: hsl(215, 51%, 70%);
+}
+.card-bottom .floating-elements .clear{
+    clear: both;
+}
+.card-bottom footer img{
+    margin-right: .5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+.card-bottom hr{
+    opacity: .2;
+}
+.card-bottom footer{
+    margin-bottom: 0;
+}
+.card-bottom footer figure{
+    display: inline-block;
+}
+.card-bottom footer p{
+    display: inline-block;
+    color: hsl(215, 51%, 70%);
+}
+.card-bottom footer p span{
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+.active-state-cover-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0%;
+    left: 0;
+    border-radius: 4%;
+    background-color: rgb(0 145 158 / 60%);
+    opacity: 0;
+}
+.active-state-cover-image svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* --------ACTIVE STATES----------- */
+.active-state-cover-image:active{
+    opacity: 1;
+    cursor: pointer;
+}
+.card-bottom .card-heading:active{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.card-bottom footer span:active{
+    color: hsl(178, 100%, 50%);
+}
+/* -------------------------------------- */
+
