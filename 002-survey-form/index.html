@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kartik Kumar">
+    <meta name="description" content="Survey form by Kartik KUmar">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal details</legend>
+            <label id="name-label" for="name">Name <input placeholder="Enter name" required type="text" name="name"
+                id="name"></label>
+
+                <label id="email-label" for="email">Email <input placeholder="Enter email" required type="email"
+                    name="email" id="email"></label>
+                    
+                    <label id="number-label" for="number">Age (optional) <input placeholder="Age" min="13" max="120"
+                        type="number" name="age" id="number"></label>
+                        
+                        <label for="dropdown">
+                            Which option best describes your current role?
+                            <select id="dropdown" name="dropdown" required>
+                                <option value="1">Select current role</option>
+                                <option value="2">option 1</option>
+                                <option value="2">option 2</option>
+                                <option value="2">option 3</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Required selection*</legend>
+            <section id="radio">
+                Would you recommend freeCodeCamp to a friend?
+                <label for="definitely">
+                    <input type="radio" value="radio 1" name="radio" checked id="definitely"> Definitely
+                </label>
+                <label for="maybe">
+                    <input type="radio" value="radio 2" name="radio" id="maybe"> Maybe
+                </label>
+                <label for="not-sure">
+                    <input type="radio" value="radio 3" name="radio" id="not-sure"> Not Sure
+                </label>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Check all that apply</legend>
+            <section id="checkbox">
+                What would you like to see improved? <span id="warning">(Check all that apply)</span>
+                <label for="frontend">
+                    <input type="checkbox" value="ch1" id="frontend"> Frontend
+                </label>
+                <label for="backend">
+                    <input id="backend" type="checkbox" value="ch2"> Backend
+                </label>
+                
+                <label for="fullstack">
+                    <input id="fullstack" type="checkbox" value="ch3"> Fullstack
+                </label>
+                
+                <label for="java">
+                    <input id="java" type="checkbox" value="ch4"> Java
+                </label>
+
+                <label for="python">
+                    <input id="python" type="checkbox" value="ch5"> Python
+                </label>
+                <label for="cpp">
+                    <input id="cpp" type="checkbox" value="ch6"> C++
+                </label>
+                <label for="Ruby">
+                    <input id="ruby" type="checkbox" value="ch7"> Python
+                </label>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Optional</legend>
+            <label id="textarea">
+                Any Comments or Suggestions ?
+                <textarea placeholder="Comments here"></textarea>
+            </label>
+        </fieldset>
+        <button id="submit">Submit</button>
+    </form>
+    <p style="text-align: center;">Challange by <a href="https://freecodecamp.com">freeCodeCamp</a>. Created by <a href="https://www.linkedin.com/in/kartikkumar01/">Kartik Kumar</a></p>
+</body>
+
+</html>
