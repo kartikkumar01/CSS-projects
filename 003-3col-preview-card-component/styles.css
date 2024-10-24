@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+/* ----------css reset----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+}
+/* ---------------------------------- */
+div.flex-for-centering-container{
+    border: 1px solid transparent;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin:4.5rem auto;
+    width: 90%;
+    max-width: 800px;
+    min-height: 440px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2.4em;
+}
+.card h2{
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 95%);
+    margin-block: 1.4rem;
+}
+
+.card p{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.4rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 22px;
+    margin-bottom: 2rem;
+}
+.card a{
+    display: inline-block;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.4rem;
+    background-color: hsl(0, 0%, 95%);
+    padding: .8em 1.5em;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin-top: auto;
+}
+
+
+/* ------------------------------------------ */
+.first-card{
+    background-color: hsl(30, 77%, 52%);
+}
+.first-card a{
+    color: hsl(30, 77%, 52%);
+}
+.second-card{
+    background-color: hsl(184, 100%, 22%);
+}
+.second-card a{
+    color: hsl(184, 100%, 22%);
+}
+.third-card{
+    background-color: hsl(179, 100%, 13%);
+}
+.third-card a{
+    color: hsl(179, 100%, 13%);
+}
+/* --------------------------------------------- */
+
+
+/* --------[START] active states of anchor links-------- */
+.card a:active{
+    color: hsl(0, 0%, 95%);
+    background-color: inherit;
+}
+/* --------[END] active states of anchor links-------- */
+
+
+@media only screen and (max-width: 680px){
+    .container{
+        display: block;
+    }
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    padding-block:12px;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: rgb(159, 159, 159);
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
