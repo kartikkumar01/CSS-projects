@@ -50,6 +50,11 @@ body{
     white-space: pre-line;
     margin-bottom: 8px;
 }
+.enjoy-the-music{
+    padding-left: 15px;
+    margin-block:5px 2px;
+    text-decoration: underline;
+}
 .hero-audio::-webkit-media-controls-play-button,
 .hero-audio::-webkit-media-controls-panel{
     background-color: #FBD8A4;
