@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* -----css-reset---------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.7rem;
+    color: #E0E0E0;
+    font-family:"Roboto", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Merriweather", serif;
+    color: #BB86FC;
+    margin-block: 20px;
+}
+.text-center{
+    text-align: center;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* ------css-reset-ends--- */
+aside{
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #1E1E1E;
+}
+
+aside li{
+    list-style: none;
+    margin-block: 10px;
+    padding-block: 5px;
+    text-align: center;
+}
+aside li:hover{
+    transform: scale(1.2);
+    transition: transform 100ms;
+    background-color: #121212e8;
+}
+article .go-to-top{
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgb(171, 153, 229);
+    border-radius: 50%;
+    border: 1px solid white;
+}
+article .go-to-top:hover{
+    transform: scale(1.1);
+    transition: transfrom 100ms;
+}
+article{
+    margin-left: auto;
+    width: 80%;
+    min-height: 100vh;
+    background-color: #1E1E1E;
+}
+code{
+    display: block;
+    background-color: #c5c0c0;
+    color: rgb(43, 42, 42);
+    /* color: #03DAC6; */
+    border-radius: 5px;
+    min-height: 60px;
+    width: 80%;
+    margin-block: 15px;
+    margin-left:50px;
+    padding: 10px 8px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5rem;
+    white-space: pre-line;
+}
+article p{
+    width: 95%;
+    margin: 5px auto;
+}
+article h2{
+    text-decoration: underline;
+}
+.nav-heading,.site-heading{
+    /* border: 1px solid white; */
+    margin: 0;
+    padding-block: 10px;
+    background-color: #121212e8;
+    position: sticky;
+    top:0;
+    backdrop-filter: blur(2px);
+}
+
+article section{
+    padding-inline: 20px;
+    border: 1px solid transparent;
+}
+section h2{
+    margin-top: 50px;
+}
+

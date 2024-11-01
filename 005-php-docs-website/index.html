@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Php docs website">
+    <meta name="author" content="kartik kumar">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>PHP site</title>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <h2 class="text-center nav-heading">Navigation</h2>
+            <nav>
+                <ul>
+                    <li><a href="#introduction-to-php">Introduction to PHP</a></li>
+                    <li><a href="#basics">Basics</a></li>
+                    <li><a href="#control-structures">Control Structures</a></li>
+                    <li><a href="#functions">Functions</a></li>
+                    <li><a href="#string-handling">String Handling</a></li>
+                    <li><a href="#arrays">Arrays</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#integrating-php-and-database">Integrating PHP and DB</a></li>
+                    <li><a href="#maintaining-user-state">Maintaining User State</a></li>
+                    <li><a href="#working-with-file-system">Working with File System</a></li>                    
+                </ul>
+            </nav>
+        </aside>
+        <article>
+            <a href="#introduction-to-php"><img src="./go-up.png" alt="go to top" class="go-to-top"></a>
+            <h1 class="text-center site-heading">PHP Website</h1>
+            <section id="introduction-to-php">
+                <h2>Introduction to PHP</h2>
+                <h3>- What is PHP?</h3>
+                <p>PHP, or Hypertext Preprocessor, is a widely-used open-source server-side scripting language designed for web development. It allows developers to create dynamic and interactive web pages by processing user input and generating content on the server before sending it to the browser. PHP can be easily embedded in HTML, making it simple to integrate server-side logic with front-end design.</p>
+                <h3>- Client side / Server side scripting</h3>
+                <h4>- - Client side scripting</h4>
+                <p>Client-side scripting refers to code that runs in the user's browser rather than on the server. This type of scripting is primarily used to create interactive web pages and enhance user experience. Languages like JavaScript, HTML, and CSS are commonly utilized for client-side development, enabling features such as form validation, animations, and dynamic content updates without requiring communication with the server. The advantages of client-side scripting include faster response times and reduced server load, as many tasks are handled locally. However, it can present challenges such as browser compatibility issues and security risks, since the code is visible and modifiable by users.</p>
+                <h4>- - Server side scripting</h4>
+                <p>In contrast, server-side scripting executes on the server before the content is sent to the user's browser. This approach is used to generate dynamic web pages, manage databases, and handle user authentication. Languages such as PHP, Python, Ruby, and Node.js are typically employed for server-side development. The benefits of server-side scripting include enhanced security and centralized control over content delivery, ensuring consistent user experiences. However, server-side processing can lead to increased load on the server and slower response times, as every interaction may require a round trip to the server. Understanding the differences between client-side and server-side scripting helps developers choose the right approach for their web applications, balancing performance and functionality.</p>
+                <h3>- Local server / Remote server</h3>
+                <h4>- - Local server</h4>
+                <p>A local server is hosted on a developer's computer or a local network, allowing for development and testing of web applications without an internet connection. It offers quick access and easy configuration through tools like XAMPP or WAMP, making it ideal for immediate feedback during coding.</p>
+                <h4>- - Remote server</h4>
+                <p>On the other hand, a remote server is hosted by a web service provider and is accessible via the internet. It is used to deploy web applications for public use, handling more traffic and providing a stable environment for production. While remote servers offer global access, they require a reliable internet connection and involve considerations for security and maintenance. Understanding these differences helps developers choose the right setup for their projects.</p>
+                <h3>- Static / Dynamic Website</h3>
+                <h4>- - Static website</h4>
+                <p>A static website is one that delivers the same content to every user, meaning the web pages are fixed and do not change unless a developer manually updates them. These sites are typically built using HTML and CSS, making them simple and fast to load. Static websites are ideal for showcasing information that doesn’t require frequent updates, such as portfolios, brochures, or informational sites.</p>
+                <h4>- - Dynamic website</h4>
+                <p>In contrast, a dynamic website can change its content based on user interactions or other factors like database queries. These sites often use server-side scripting languages like PHP, Python, or JavaScript frameworks to generate content dynamically. Dynamic websites are more interactive and can provide personalized experiences, making them suitable for applications like social networks, e-commerce platforms, and content management systems. Understanding the difference between static and dynamic websites helps you choose the right approach for your web projects based on your needs.</p>
+                <h3>- Embedding PHP code in web pages</h3>
+                <p>Embedding PHP code in web pages involves inserting PHP scripts directly within an HTML file to add dynamic functionality. This is typically done by using the PHP opening and closing tags, <?php and ?>. Within these tags, you can write PHP code that interacts with databases, processes form data, or generates dynamic content based on user input.</p>
+                <code>&lt;?php 
+                    echo date('Y-m-d H:i:s'); 
+                &gt;      
+                </code>
+            </section>
+            
+            <section id="basics">
+                <h2>PHP Basics</h2>
+            
+                <h3>- Tokens</h3>
+                <p>Tokens are the smallest unit of a program in PHP. They include identifiers, keywords, literals, and operators. In PHP, tokens are used to build statements and expressions.</p>
+            
+                <h3>- Variables</h3>
+                <p>Variables in PHP are used to store data and are defined with a dollar sign ($) followed by the variable name. They can hold different data types, and their values can be changed throughout the script.</p>
+            
+                <h3>- Variable Scope</h3>
+                <p>Variable scope refers to the accessibility of variables in different parts of the code. PHP has three types of variable scope: local, global, and static. Local variables are accessible only within the function they are declared, while global variables can be accessed from anywhere in the script.</p>
+            
+                <h3>- Constants</h3>
+                <p>Constants are similar to variables but cannot be changed once defined. They are declared using the <code>define()</code> function and are typically used for values that should remain constant throughout the script.</p>
+            
+                <h3>- Data Types</h3>
+                <p>PHP supports several data types, including integers, floats, strings, booleans, arrays, and objects. Understanding data types is crucial for effective programming, as they determine how data can be manipulated.</p>
+            
+                <h3>- Number Handling in PHP</h3>
+                <p>PHP provides various functions for number handling, including <code>abs()</code> for absolute values, <code>round()</code> for rounding numbers, and <code>rand()</code> for generating random numbers.</p>
+            
+                <h3>- Operands and Operators</h3>
+                <p>Operands are the values or variables on which operators perform operations. PHP supports various operators, including arithmetic, comparison, logical, and assignment operators.</p>
+            
+                <h3>- Expressions</h3>
+                <p>An expression is a combination of variables, operators, and values that results in a value. For example, <code>$a + $b</code> is an expression that adds the values of $a and $b.</p>
+            
+                <h3>- Operator Precedence</h3>
+                <p>Operator precedence determines the order in which operators are evaluated in an expression. Operators with higher precedence are evaluated before those with lower precedence. For instance, multiplication has higher precedence than addition.</p>
+            
+                <h3>- Comments</h3>
+                <p>Comments are used to leave notes in the code and are ignored by the PHP interpreter. Single-line comments can be created using <code>//</code> or <code>#</code>, while multi-line comments use <code>/* ... */</code>.</p>
+            
+                <h3>- Echo and Print Statement</h3>
+                <p>The <code>echo</code> and <code>print</code> statements are used to output data to the screen. <code>echo</code> can take multiple parameters, while <code>print</code> returns 1, making it usable in expressions.</p>
+                
+                <code>
+                    &lt;?php 
+                        $name = "John";
+                        echo "Hello, " . $name; 
+                    ?&gt;
+                </code>
+            </section>
+            
+            
+            <section id="control-structures">
+                <h2>Control Structures</h2>
+            
+                <h3>- Branching Statements</h3>
+                
+                <h4>- - If-Else</h4>
+                <p>The <code>if-else</code> statement allows the execution of certain code based on a condition. If the condition evaluates to true, the code inside the <code>if</code> block runs; otherwise, the code inside the <code>else</code> block executes.</p>
+            
+                <h4>- - Ternary Operator</h4>
+                <p>The ternary operator is a shorthand way of writing an <code>if-else</code> statement. It takes three operands: a condition, a result for true, and a result for false. The syntax is <code>condition ? result_if_true : result_if_false;</code>.</p>
+            
+                <h4>- - Switch</h4>
+                <p>The <code>switch</code> statement allows multi-way branching. It evaluates an expression and executes the corresponding case block. If none of the cases match, the <code>default</code> case executes if provided.</p>
+            
+                <h3>- Looping Statements</h3>
+                
+                <h4>- - While</h4>
+                <p>The <code>while</code> loop repeatedly executes a block of code as long as a specified condition is true. It's useful for scenarios where the number of iterations isn't known beforehand.</p>
+            
+                <h4>- - Do-While</h4>
+                <p>The <code>do-while</code> loop is similar to the <code>while</code> loop, but it guarantees that the code block executes at least once, as the condition is evaluated after the loop's body.</p>
+            
+                <h4>- - For</h4>
+                <p>The <code>for</code> loop is typically used when the number of iterations is known. It consists of three parts: initialization, condition, and increment/decrement, allowing precise control over the loop execution.</p>
+            
+                <h3>- File Inclusion Statements</h3>
+                <p>File inclusion statements in PHP allow you to insert the contents of one PHP file into another. This is useful for reusing code, such as including header and footer files. The <code>include</code> and <code>require</code> statements are commonly used, with <code>require</code> producing a fatal error if the file cannot be included, while <code>include</code> only gives a warning.</p>
+                
+                <code>
+                    &lt;?php 
+                        $age = 20;
+                        if ($age >= 18) {
+                            echo "You are an adult.";
+                        } else {
+                            echo "You are a minor.";
+                        }
+                    ?&gt;
+                </code>
+            </section>
+            
+            
+            <section id="functions">
+                <h2>Functions</h2>
+            
+                <h3>- Function Definition</h3>
+                <p>A function is a block of code designed to perform a specific task. It is defined using the <code>function</code> keyword followed by the function name and parentheses. Functions can take parameters and return values.</p>
+            
+                <h3>- Creating and Invoking User-Defined Functions</h3>
+                <p>User-defined functions are created by the developer to encapsulate code for reuse. They are invoked by calling the function name followed by parentheses. If the function takes parameters, they can be passed within the parentheses.</p>
+            
+                <h3>- Formal Parameters versus Actual Parameters</h3>
+                <p>Formal parameters are the variables defined in the function declaration, while actual parameters are the values passed to the function when it is called. Understanding this distinction is important for effectively using functions in PHP.</p>
+            
+                <h3>- Function and Variable Scope</h3>
+                <p>Scope refers to the accessibility of variables and functions in different parts of the code. Variables defined inside a function have local scope, meaning they are only accessible within that function. In contrast, global variables can be accessed from anywhere in the script.</p>
+            
+                <h3>- Recursion</h3>
+                <p>Recursion is a programming technique where a function calls itself to solve a problem. It is often used for tasks that can be broken down into smaller, similar sub-tasks, such as calculating factorials or traversing tree structures.</p>
+            
+                <h3>- Library Functions</h3>
+                <p>PHP provides a rich set of built-in library functions that perform common tasks, such as string manipulation, array handling, and mathematical calculations. These functions save time and effort by allowing developers to leverage pre-existing code.</p>
+                
+                <code>
+                    &lt;?php 
+                        function greet($name) {
+                            return "Hello, " . $name . "!";
+                        }
+                        echo greet("Alice");
+                    ?&gt;
+                </code>
+            </section>
+            
+            
+            <section id="string-handling">
+                <h2>String Handling</h2>
+            
+                <h3>- Interpolation with Curly Braces</h3>
+                <p>In PHP, string interpolation allows you to directly embed variables within double-quoted strings. Curly braces can be used to clearly define the variable's boundaries, which is particularly useful when concatenating variables with other text.</p>
+            
+                <h3>- Characters and String Indexes</h3>
+                <p>Strings in PHP are indexed with zero-based numbering, meaning the first character is at index 0. You can access individual characters using their index within square brackets, such as <code>$string[0]</code> to get the first character.</p>
+            
+                <h3>- String Operators</h3>
+                <p>The primary operator for string manipulation in PHP is the concatenation operator (<code>.</code>). This operator combines two strings together. For example, <code>$greeting = $firstName . " " . $lastName;</code> merges the first and last names.</p>
+            
+                <h3>- Heredoc</h3>
+                <p>Heredoc syntax allows you to define multi-line strings without escaping quotes. It begins with <<< followed by an identifier and ends with the same identifier. This makes it convenient for embedding large blocks of text, such as HTML or messages.</p>
+            
+                <h3>- String Functions</h3>
+                <p>PHP provides numerous built-in string functions, such as <code>strlen()</code> for finding the length of a string, <code>strtoupper()</code> for converting a string to uppercase, and <code>substr()</code> for extracting parts of a string. These functions help in various string manipulations.</p>
+            
+                <h3>- Formatting Strings</h3>
+                <p>String formatting can be performed using functions like <code>printf()</code> and <code>sprintf()</code>, allowing you to format strings with specific data types and structure, enhancing readability and organization in output.</p>
+            
+                <h3>- Comparing and Searching Strings and Substrings</h3>
+                <p>PHP includes functions for comparing strings, such as <code>strcmp()</code> for case-sensitive comparison and <code>strcasecmp()</code> for case-insensitive comparison. To search for substrings within a string, you can use <code>strpos()</code>, which returns the position of the substring if found.</p>
+            
+                <code>
+                    &lt;?php 
+                        $name = "Alice";
+                        echo "Hello, {$name}!"; // Interpolation with curly braces
+                    ?&gt;
+                </code>
+            </section>
+            
+            
+            <section id="arrays">
+                <h2>Arrays</h2>
+            
+                <h3>- PHP Arrays</h3>
+                <p>In PHP, arrays are used to store multiple values in a single variable. They can hold values of different types, including integers, strings, and even other arrays. PHP supports both indexed arrays, which use numeric keys, and associative arrays, which use named keys.</p>
+            
+                <h3>- Creating Arrays</h3>
+                <p>Arrays can be created using the <code>array()</code> function or the shorthand syntax with square brackets. For example, <code>$fruits = array("apple", "banana", "orange");</code> or <code>$colors = ["red", "green", "blue"];</code>.</p>
+            
+                <h3>- Accessing Array Elements</h3>
+                <p>Array elements can be accessed using their index or key. For indexed arrays, you can retrieve values using <code>$fruits[0]</code> for the first element. In associative arrays, use the corresponding key, like <code>$ages["John"]</code> to access John's age.</p>
+            
+                <h3>- Multidimensional Arrays</h3>
+                <p>Multidimensional arrays are arrays containing other arrays. This structure is useful for representing complex data, such as tables. You can access elements using multiple indices, like <code>$matrix[1][2]</code> to get the element in the second row and third column.</p>
+            
+                <h3>- Inspecting Arrays</h3>
+                <p>To inspect the contents of an array, you can use functions like <code>print_r()</code> or <code>var_dump()</code>. These functions provide detailed information about the array's structure and contents, making debugging easier.</p>
+            
+                <h3>- Deleting from Arrays</h3>
+                <p>Elements can be deleted from an array using the <code>unset()</code> function. For example, <code>unset($fruits[1]);</code> removes the second element from the array, shifting subsequent elements down.</p>
+            
+                <h3>- Iterating with each() and foreach()</h3>
+                <p>The <code>foreach()</code> loop is a convenient way to iterate through each element in an array. It automatically assigns the current element's value to a variable, making it easy to work with arrays. The <code>each()</code> function, although deprecated, was used to iterate over arrays as well, returning the current key and value.</p>
+            
+                <h3>- Iterative Functions: current(), next(), prev(), reset(), end()</h3>
+                <p>PHP provides several functions to navigate through an array. <code>current()</code> returns the value of the current element, <code>next()</code> advances the pointer to the next element, <code>prev()</code> moves it to the previous element, <code>reset()</code> resets the pointer to the first element, and <code>end()</code> moves it to the last element.</p>
+            
+                <code>
+                    &lt;?php 
+                        $fruits = ["apple", "banana", "cherry"];
+                        echo $fruits[1]; // Outputs "banana"
+                    ?&gt;
+                </code>
+            </section>
+            
+            
+            <section id="forms">
+                <h2>Forms</h2>
+            
+                <h3>- Working with HTML Form Controls and PHP</h3>
+                <p>HTML forms are essential for collecting user input in web applications. They consist of various controls, such as text fields, radio buttons, checkboxes, and submit buttons. When a user submits a form, the data can be processed by PHP on the server side to perform actions like saving to a database or sending an email.</p>
+            
+                <h3>- Superglobal Variables</h3>
+                <p>PHP provides several superglobal variables, which are built-in global arrays that can be accessed from anywhere in the script. These include <code>$_GET</code>, <code>$_POST</code>, <code>$_REQUEST</code>, <code>$_SESSION</code>, and more. Superglobals simplify the process of handling data from forms and managing session information.</p>
+            
+                <h3>- Superglobal Array</h3>
+                <p>The <code>$_POST</code> and <code>$_GET</code> superglobal arrays are particularly important for handling user input. <code>$_POST</code> is used for data sent via HTTP POST requests, while <code>$_GET</code> is for data sent via URL parameters. These arrays allow you to access form values directly.</p>
+            
+                <h3>- Importing User Input</h3>
+                <p>To import user input from forms, ensure that your HTML form includes the <code>method</code> attribute set to either <code>POST</code> or <code>GET</code>. Upon form submission, PHP automatically populates the corresponding superglobal array with the submitted data, making it readily accessible.</p>
+            
+                <h3>- Accessing User Input</h3>
+                <p>User input can be accessed through the appropriate superglobal array. For example, if a form field named <code>username</code> is submitted, you can retrieve its value using <code>$username = $_POST['username'];</code> or <code>$username = $_GET['username'];</code>, depending on the method used.</p>
+            
+                <code>
+                    &lt;form action="process.php" method="POST"&gt;
+                        &lt;input type="text" name="username" placeholder="Enter your username"&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                </code>
+            </section>
+            
+            
+            <section id="integrating-php-and-database">
+                <h2>Integrating PHP and Database</h2>
+            
+                <h3>- Connecting to Database</h3>
+                <p>To connect PHP to a database, you typically use the MySQLi or PDO (PHP Data Objects) extension. A connection is established by providing the database host, username, password, and database name. For example, using MySQLi, the connection can be made with <code>$conn = new mysqli($host, $username, $password, $dbname);</code>.</p>
+            
+                <h3>- Making SQL Queries</h3>
+                <p>Once connected, you can create SQL queries to interact with the database. Common SQL commands include <code>SELECT</code> for retrieving data, <code>INSERT</code> for adding records, <code>UPDATE</code> for modifying existing data, and <code>DELETE</code> for removing records.</p>
+            
+                <h3>- Executing Queries</h3>
+                <p>To execute SQL queries in PHP, you can use methods like <code>query()</code> or prepared statements. For example, to execute a simple query, you might use <code>$result = $conn->query($sql);</code>, where <code>$sql</code> contains your SQL statement.</p>
+            
+                <h3>- Fetching Data Sets</h3>
+                <p>After executing a query, you can fetch the results using functions like <code>fetch_assoc()</code> to retrieve a result row as an associative array. This allows you to easily access the data returned by your SQL query, for instance, <code>while($row = $result->fetch_assoc()) { ... }</code>.</p>
+            
+                <h3>- Integrating Forms and Databases</h3>
+                <p>Integrating forms with a database typically involves capturing user input through an HTML form and then using that data to perform database operations. For basic form submission, you would collect data via <code>$_POST</code> and use an <code>INSERT</code> SQL statement to add it to the database.</p>
+            
+                <h3>- Editing Data with an HTML Form</h3>
+                <p>To edit existing data, you can pre-fill an HTML form with current values from the database. After the user makes changes and submits the form, you would process the input with an <code>UPDATE</code> SQL query to modify the relevant record in the database.</p>
+            
+                <code>
+                    &lt;form action="submit.php" method="POST"&gt;
+                        &lt;input type="text" name="username" placeholder="Enter your username"&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                </code>
+            </section>
+            
+            
+            <section id="maintaining-user-state">
+                <h2>Maintaining User State</h2>
+            
+                <h3>- Introduction to Cookies</h3>
+                <p>Cookies are small pieces of data stored on the user's computer by the web browser while browsing a website. They are used to remember user preferences, login information, and other details to enhance the user experience on subsequent visits.</p>
+            
+                <h3>- Setting Time in a Cookie with PHP</h3>
+                <p>To set a cookie in PHP, you can use the <code>setcookie()</code> function, specifying the cookie name, value, expiration time, and path. The expiration time can be set using the <code>time()</code> function, allowing you to control how long the cookie should persist.</p>
+            
+                <h3>- Deleting a Cookie</h3>
+                <p>To delete a cookie, you can set its expiration time to a past date using the <code>setcookie()</code> function again. For example, <code>setcookie("username", "", time() - 3600);</code> effectively removes the cookie.</p>
+            
+                <h3>- Creating Session Cookie</h3>
+                <p>A session cookie is created when you set a cookie without an expiration time, meaning it will last only until the browser is closed. This is useful for temporary data storage that does not need to persist beyond the current browsing session.</p>
+            
+                <h3>- Introduction to Sessions</h3>
+                <p>Sessions are used to store user data on the server side, providing a more secure way to maintain user state than cookies. Each session is identified by a unique session ID, allowing the server to track user data across different pages.</p>
+            
+                <h3>- Starting a Session</h3>
+                <p>To start a session in PHP, you use the <code>session_start()</code> function at the beginning of your script. This initializes the session and makes session variables accessible for storing user-specific data.</p>
+            
+                <h3>- Registering Session Variables</h3>
+                <p>Session variables can be registered by assigning values to the <code>$_SESSION</code> superglobal array. For instance, <code>$_SESSION['username'] = 'John';</code> stores the username for the duration of the session.</p>
+            
+                <h3>- Working with Session Variables</h3>
+                <p>You can access and manipulate session variables like any other array. For example, to retrieve the username, you would use <code>echo $_SESSION['username'];</code>. This data remains available until the session is destroyed or expires.</p>
+            
+                <h3>- Destroying a Session</h3>
+                <p>To end a session and delete all session variables, you can use <code>session_destroy()</code>. It’s important to call <code>session_start()</code> before this function to ensure the session is active.</p>
+            
+                <h3>- Passing Session IDs</h3>
+                <p>Session IDs can be passed between pages via URL parameters or cookies. This helps maintain the session state across different requests. PHP manages the session ID automatically, but you can retrieve it with <code>session_id()</code>.</p>
+            
+                <h3>- Encoding and Decoding Session Variables</h3>
+                <p>Session variables can be encoded for security or compatibility using functions like <code>serialize()</code> and <code>unserialize()</code>. This is particularly useful for storing complex data types like arrays or objects.</p>
+            
+                <h3>- Increase Session Expire Time</h3>
+                <p>You can increase the session expiration time by modifying the <code>session.gc_maxlifetime</code> setting in your PHP configuration or by using <code>ini_set()</code>. This setting controls how long session data remains active before being cleaned up.</p>
+            
+                <h3>- Working of Session Without Cookie</h3>
+                <p>Sessions can function without cookies by passing the session ID through URL parameters. This is useful when cookies are disabled in the user's browser. You can configure PHP to use URL-based session IDs by setting the <code>session.use_trans_sid</code> directive to 1.</p>
+            
+                <code>
+                    &lt;?php 
+                        session_start(); 
+                        $_SESSION['username'] = 'John'; 
+                        echo $_SESSION['username']; // Outputs "John"
+                    ?&gt;
+                </code>
+            </section>
+            
+            
+            <section id="working-with-file-system">
+                <h2>Working with File System</h2>
+            
+                <h3>- Understanding PHP File Permissions</h3>
+                <p>PHP interacts with the file system using the permissions set on files and directories. File permissions determine who can read, write, or execute a file. These permissions are typically defined using a three-digit octal number, where each digit represents the permissions for the owner, group, and others. Understanding these permissions is crucial for secure file handling in PHP applications.</p>
+            
+                <h3>- Opening and Closing a File</h3>
+                <p>To open a file in PHP, you can use the <code>fopen()</code> function, which requires the filename and the mode (such as <code>'r'</code> for reading or <code>'w'</code> for writing). Once you are done with the file, it’s important to close it using the <code>fclose()</code> function to free up system resources.</p>
+            
+                <h3>- File Reading and Writing Functions</h3>
+                <p>PHP offers various functions for reading and writing files. For reading, you can use <code>fgets()</code> to read a line from a file or <code>fread()</code> to read a specified number of bytes. For writing, <code>fwrite()</code> allows you to write data to an open file. These functions enable you to handle file content efficiently.</p>
+            
+                <h3>- File System and Directory Functions</h3>
+                <p>PHP provides a range of functions to manage files and directories. Functions like <code>file_exists()</code> check if a file exists, while <code>mkdir()</code> creates a new directory. You can also use <code>scandir()</code> to retrieve the contents of a directory. These file system functions are essential for performing file operations and managing directory structures in your applications.</p>
+            
+                <code>
+                    &lt;?php 
+                        $filename = 'example.txt'; 
+                        $file = fopen($filename, 'w'); 
+                        fwrite($file, 'Hello, world!'); 
+                        fclose($file); 
+                    ?&gt;
+                </code>
+            </section>
+            
+            
+        </article>
+    </main>
+</body>
+
+</html>
