@@ -9,3 +9,4 @@ Here are the live links to the website:
 3) 003-3column-card-component : https://003-3column-card-component.netlify.app
 4) 004-profile-card-component: https://004-profile-card-component.netlify.app
 5) 005-php-docs-website : https://005-php-docs-website.netlify.app/
+6) 006-diwali-wishes-website : https://006-diwali-wishes-website.netlify.app/
