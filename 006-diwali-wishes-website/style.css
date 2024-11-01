@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&family=Style+Script&display=swap');
+/* ------------css reset------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Salsa",cursive;
+}
+/* ----------css reset ends ---- */
+
+/* ------general-purpose-classes------------ */
+.block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
+
+}
+.black{
+    color: #000;
+}
+.dark-gray{
+    color: #1E1E1E;
+}
+/* ------general-purpose-classes-ends--------- */
+.hero{
+    background-color: #F99501;
+    background-image: url(./images/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-jhalar-img{
+    width: 100%;
+    max-width: 200px;
+    margin-top: -110px;
+}
+
+.hero-p-audio-container{
+    margin:5px 0 0 10vw;
+}
+.hero-p{
+    font-size: 3.5rem;
+    white-space: pre-line;
+    margin-bottom: 8px;
+}
+.hero-audio::-webkit-media-controls-play-button,
+.hero-audio::-webkit-media-controls-panel{
+    background-color: #FBD8A4;
+}
+.hero-audio-container{
+    background-color: #FBD8A4;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 1rem;
+    border-radius: 40px;
+    height: 40px;
+    margin-block: 2px;
+}
+.hero-audio{
+    height: inherit;
+}
+.hero-audio-container .soulful-music{
+    padding-inline: .8rem;
+}
+
+.hero-diya-img{
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+}
+@media (width < 600px){
+    .hero-p-audio-container{
+        width: 95%;
+        margin-inline: auto;
+    }
+    .hero-p{
+        font-size: 20px;
+    }
+    .hero-volume-icon,.soulful-music{
+        display: none;
+    }
+}
+@media (width >420px) and (width<600px){
+    .hero-p{
+        font-size: 30px;
+    }
+}
+@media (width<430px){
+    .hero-diya-img-two{
+        display: none;
+    }
+    .hero-diya-img-one{
+        display: block;
+        margin-left: auto;
+    }
+}
+
+/* section 2 start */
+.section-2{
+    /* min-height: 80vh; */
+    background-color: #F99501;
+    border: 1px solid transparent;
+    font-family: "Style script", cursive;
+}
+.section-2-border{
+    width: 70%;
+    margin: 30px auto;
+}
+.section-2-image{
+    width: 95%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.section-2-p{
+    font-size: 50px;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+@media (width<680px){
+    .section-2-p{
+        font-size: 30px;
+    }
+}
+
+/* section 3 start */
+.section-3{
+    background-color: #F99501;
+}
+.sec-3-p-and-image-container{
+    /* border: 2px solid black; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-3-img{
+    max-width: 250px;
+    margin-left: -120px;
+}
+.sec-3-para-container{
+    background-color: #fff;
+    font-size: 3.5rem;
+    max-width: 500px;
+    padding: 20px 100px 20px 20px;
+    border-radius: 20px;
+}
+.sec-3-para-container p{
+    padding-bottom: 40px;
+}
+
+@media (width<700px){
+    .sec-3-para-container{
+        font-size: 2.7rem;
+    }
+    .section-3-img{
+        max-width: 215px;
+    }
+}
+@media (width<670px){
+    .sec-3-para-container{
+        font-size: 2.5rem;
+    }
+    .section-3-img{
+       margin-left: -100px;
+    }
+}
+@media (width < 555px){
+    .sec-3-para-container{
+        font-size: 2rem;
+    }
+    .section-3-img{
+        max-width: 180px;
+        margin-left: -80px;
+    }
+    
+}
+@media (width<480px){
+    .sec-3-para-container{
+        font-size: 1.8rem;
+    }
+    .section-3-img{
+        max-width: 150px;
+    }
+    .sec-3-para-container p{
+        padding-bottom: 20px;
+    }
+}
+@media (width < 430px){
+    .sec-3-para-container{
+        padding-right: 75px;
+        max-width: 270px;
+        font-size: 1.6rem;
+    }
+}
+@media (width < 350px){    
+    .section-3-img{
+        max-width: 110px;
+    }
+}
+/* ---------section-4-------------- */
+.section-4{
+    background-color: #F99501;
+    border: 1px solid transparent;
+}
+.section-4 p{
+    margin: 15px auto;
+    width: 95%;
+}
+.sec-4-img{
+    width: 95%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.sec-4-para1{
+    font-size: 2.4rem;
+}
+.sec-4-para2{
+    font-family: "Style script", cursive;
+    font-size: 6.5rem;
+}    
+.sec-4-para3{
+    text-align: right;
+}
+@media (width < 900px){
+    .sec-4-para2{
+        font-size: 4.5rem;
+    }
+}
+@media (width < 500px){
+    .sec-4-para1{
+        font-size: 1.5rem;
+    }
+    .sec-4-para2{
+        font-size: 2.4rem;
+    }
+    .sec-4-para3{
+        font-size: 1.2rem;
+    }
+}
