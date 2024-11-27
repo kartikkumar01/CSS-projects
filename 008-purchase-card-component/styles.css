@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Red Hat Display', serif;
+    background-color: hsl(224, 66%, 83%);
+    color: hsl(224, 23%, 55%);
+}
+a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+}
+/* -----cssresetendshere----- */
+.color-black{
+    color: rgb(23, 23, 23);
+}
+.bold{
+    font-weight: bold;
+}
+.text-center{
+    text-align: center;
+}
+.card{
+    width: 90%;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    font-weight:500;
+}
+.card-img{
+    display: block;
+    width:100%
+}
+
+.card-bottom{
+    padding: 20px 25px;
+    background-color: white;
+}
+.card-bottom > *:not(:last-child){
+    margin-bottom: 2.5rem;
+}
+.plan{
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  hsl(225, 100%, 98%);
+    padding: 1.5rem 2rem;
+}
+.plan-left{
+    display: flex;
+    gap: 10px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-btn{
+    display: block;
+    width: 100%;
+    border:none;
+    font-weight: inherit;
+}
+
+.card-btn:hover{
+    cursor: pointer;
+}
+
+.proceed-btn{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    border-radius: 1rem;
+    padding-block: 1.2rem;
+    box-shadow: 0px 5px 16px #585858;
+}
+
+.cancel-btn{
+    background-color: transparent;
+    color: inherit;
+}
+
+.cancel-btn:active{
+    color: black;
+}
+
+.proceed-btn:active{
+    background-color: hsl(245, 75%, 60%);
+}
+
+.plan-right a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (width < 350px){
+    h1.card-heading{
+        font-size: 2rem;
+    }
+    .card-bottom{
+        font-size:1.4rem;
+        padding: 20px 1rem;
+    }
+    .card-bottom > *:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    .plan-left{
+        gap:5px;
+    }
+    div.plan-left img{
+        height: 35px;
+        width:35px;
+    }
+    .plan{
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media(width < 250px){
+    .plan{
+        justify-content: space-between;
+    }
+}
