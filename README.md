@@ -11,4 +11,5 @@
 5) 005-php-docs-website : https://005-php-docs-website.netlify.app/
 6) 006-diwali-wishes-website : https://006-diwali-wishes-website.netlify.app/
 7) 007-recipe-page-website : https://007-recipe-page.netlify.app/
+8) 008-purchase-card-component : https://008-purchase-card-component.netlify.app/
    
